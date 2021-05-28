@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+        
+		font-family: 'Montserrat', sans-serif;
+}
+
+.img1{
+    position: absolute;
+    
+}
+ 
+
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to bottom, #780878, #831186, #8e1994, #9921a2, #a429b1, #924fd0, #786bea, #5183ff, #00a9ff, #00c9ff, #00e4ff, #5ffbf1);
+  background-attachment:fixed;
+  
+}
+
+.top-bar {
+  background: transparent; 
+}
+  @media screen and (min-width: 768px) {
+    .top-bar {
+      display: none; } }
+
+.logo1{
+  display: block;
+ max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow( 10px 10px 1px black);
+ 
+}
+ 
+.logo{
+  position: absolute;
+  width: 100%;
+  
+}
+
+
+.icon-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-left: 1em; }
+
+.icon-menu__bar {
+    background: #fff;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    position: relative; }
+
+.icon-menu__bar:after, .icon-menu__bar:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+      background: #fff;
+      top: -.5em; }
+
+.icon-menu__bar:after {
+      top: .5em; }
+
+.menu {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+  transform: translateX(-100%);
+  transition: transform .3s; 
+  
+}
+
+  
+
+  @media screen and (min-width: 768px) {
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      transform: translateX(0); 
+      } 
+      }
+
+  .menu--show {
+    
+    transform: translateX(0); }
+
+  .menu__item {
+    padding: 1em;
+    position: relative;
+    top:50px;
+    
+    }
+    @media screen and (min-width: 768px) {
+      .menu__item {
+        border-bottom: none;
+        text-transform: uppercase; }
+        
+        .menu__item:hover {
+          background: grey; }
+          .menu__item:hover a {
+            color: #000; } }
+  .menu__link {
+    color: white;
+    
+    font-weight: bold;
+    text-decoration: none; }
